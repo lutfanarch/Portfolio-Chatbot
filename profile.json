@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "display_name": "Lutfan Haziq",
+    "preferred_tone": "Friendly, professional",
+    "role_tagline": "ICT/AI Learner | NS Completed (ORD 25 Oct 2025)",
+    "location": "Singapore",
+    "contact_email": "lutfanhaziq05@gmail.com",
+    "last_updated": "2026-01-17",
+    "disclaimer": "This portfolio bot answers strictly from the information inside profile.json. It does not use an LLM. If something is not listed, it will say it does not know."
+  },
+  "about": {
+    "short_bio": [
+      "I am Lutfan Haziq, turning 21 this year. I completed National Service on 25 October 2025.",
+      "After ORD, I used my available time to self-study Python and explore AI concepts (chatbots and machine learning) through beginner lessons and guidance from peers.",
+      "My interest grew through my exposure to trading/finance, where AI and machine learning are increasingly used. As a trader, I want to understand what AI can and cannot do, and why those strengths and limitations exist."
+    ],
+    "values": [
+      {
+        "value": "Discipline",
+        "evidence": "In NS, I trained in structured environments with strict standards and learned to function under pressure."
+      },
+      {
+        "value": "Patience",
+        "evidence": "I aim to stay calm during stressful situations and disagreements because decisions made in anger are usually lower quality."
+      },
+      {
+        "value": "Determination",
+        "evidence": "I entered NS out of shape and improved my fitness significantly through consistent effort and structured training."
+      }
+    ],
+    "growth_areas": [
+      {
+        "area": "Consistency",
+        "mitigation": "I am building systems (daily checklists, logs, and small achievable goals) so fatigue does not derail progress."
+      }
+    ]
+  },
+  "ns": {
+    "status": "Completed",
+    "ord_date": "2025-10-25",
+    "highlights": [
+      "Completed National Service (ORD 25 Oct 2025).",
+      "Experienced structured training and high-pressure environments.",
+      "Learned discipline, teamwork, and resilience under stress."
+    ]
+  },
+  "academics": {
+    "context": [
+      "O-Level holder. Private candidate for E-Math in 2025; results released in January 2026.",
+      "Key concern: E-Math D7. I am addressing this with an improvement plan and consistent practice."
+    ],
+    "elr2b2_snapshot": {
+      "ENGLISH": "B4",
+      "MATHEMATICS": "D7",
+      "SCIENCE": "B3",
+      "DESIGN&TECHNOLOGY": "A1",
+      "MALAY": "B3",
+      "HUMANITIES": "B3",
+      "CCA_POINTS": 2
+    },
+    "strengths": [
+      {
+        "area": "Design & Technology (DNT)",
+        "evidence": "Achieved A1. Enjoy building and improvising when things fail. Built an all-in-one indoor plant growth kit for a project theme related to 'organizing'."
+      }
+    ],
+    "math_statement": {
+      "what_happened": "After multiple years without math practice, I retook E-Math as a private candidate in 2025 and achieved D7.",
+      "how_i_view_it": "I do not view math as an inherent weakness; it is an effort and consistency issue.",
+      "what_i_am_doing_now": [
+        "Rebuilding fundamentals systematically (topic-by-topic).",
+        "Using practice logs and timed practice to improve accuracy and speed.",
+        "If required, I am prepared to retake E-Math again in 2026 to take part in JAE 2027."
+      ]
+    }
+  },
+  "why_ict_ai": {
+    "why_ict": [
+      "ICT builds practical skills that help me understand how software works behind the scenes.",
+      "Technology will continue to grow and evolve, and ICT skills are increasingly foundational.",
+      "I want to learn fundamentals properly rather than only using tools."
+    ],
+    "why_ai": [
+      "AI is broad (generative AI, machine learning, deep learning, reinforcement learning).",
+      "My goal is to understand where AI performs well, where it fails, and why."
+    ],
+    "why_poly": [
+      "Polytechnic provides applied learning and project opportunities over three years.",
+      "I want to use the diploma period to gain practical experience and demonstrate consistent progress through verifiable work."
+    ],
+    "career_interests": [
+      "Software Engineering",
+      "AI Engineering",
+      "Data Engineering"
+    ],
+    "teamwork": [
+      "I work well with others, listen to concerns, and aim to stay open-minded to avoid biased decisions in group settings."
+    ]
+  },
+  "learning": [
+    {
+      "title": "Python Fundamentals (Peer-guided + beginner lessons)",
+      "provider": "Self-study / peer mentoring",
+      "status": "In progress",
+      "what_i_learned": [
+        "Basic Python syntax and problem-solving",
+        "Getting comfortable with VS Code",
+        "Using LLMs as a study aid while verifying outputs carefully (the portfolio bot itself does not use an LLM)"
+      ],
+      "evidence_links": [
+        "https://github.com/lutfanarch/Portfolio-Chatbot"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Interactive Portfolio Chatbot (Streamlit)",
+      "status": "In progress (submission focus)",
+      "summary": "A Streamlit chatbot that answers admissions-facing questions using structured profile data (deterministic; no LLM).",
+      "tech": [
+        "Python",
+        "Streamlit",
+        "JSON"
+      ],
+      "highlights": [
+        "Quick buttons for common admissions topics",
+        "Admissions View for structured reading",
+        "Repos & Links section to show the GitHub repo and Streamlit demo"
+      ],
+      "repo": "https://github.com/lutfanarch/Portfolio-Chatbot",
+      "demo": "https://portfolio-chatbot-nasugzunnuqx48yz2myspz.streamlit.app/"
+    },
+    {
+      "name": "AI Trader (Learning Project)",
+      "status": "Repo created (content in progress)",
+      "summary": "A learning-focused trading project. Proof is the repository and the documentation explaining how it functions. Not financial advice.",
+      "tech": [
+        "Python"
+      ],
+      "highlights": [
+        "README will explain how the system works",
+        "Architecture and flow will be documented",
+        "Risk controls and limitations will be documented"
+      ],
+      "repo": "https://github.com/lutfanarch/JARVIS",
+      "demo": "",
+      "how_it_works_outline": [
+        "Data intake: load or fetch price data",
+        "Signal generation: deterministic rules produce buy/sell/hold",
+        "Risk management: position sizing + exposure constraints + stop conditions",
+        "Execution layer: paper-trading or broker abstraction (if implemented)",
+        "Logging/reporting: record decisions and results for review"
+      ]
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Python (beginner)",
+      "GitHub (beginner)",
+      "VS Code"
+    ],
+    "professional": [
+      "Teamwork",
+      "Open-minded collaboration",
+      "Resilience under pressure",
+      "Evidence-based communication"
+    ]
+  },
+  "evidence_and_links": {
+    "github": "https://github.com/lutfanarch",
+    "streamlit_demo": "https://portfolio-chatbot-nasugzunnuqx48yz2myspz.streamlit.app/",
+    "project_repos": [
+      {
+        "project": "Interactive Portfolio Chatbot (Streamlit)",
+        "repo": "https://github.com/lutfanarch/Portfolio-Chatbot",
+        "demo": "https://portfolio-chatbot-nasugzunnuqx48yz2myspz.streamlit.app/"
+      },
+      {
+        "project": "AI Trader (Learning Project)",
+        "repo": "https://github.com/lutfanarch/JARVIS",
+        "demo": ""
+      }
+    ],
+    "notes": [
+      "Primary focus: deterministic answers + working repo links.",
+      "AI Trader repo currently has no files yet; it will be updated before submission."
+    ]
+  },
+  "links": {
+    "github": "https://github.com/lutfanarch",
+    "streamlit_demo": "https://portfolio-chatbot-nasugzunnuqx48yz2myspz.streamlit.app/"
+  },
+  "privacy": {
+    "boundaries": [
+      "No private financial details. The AI Trader is described at a high level only.",
+      "If a question is outside the profile data, the bot should respond that it does not have that information."
+    ],
+    "avoid": [
+      "Slang",
+      "Inflated or unverifiable claims"
+    ]
+  },
+  "contact": {}
+}
