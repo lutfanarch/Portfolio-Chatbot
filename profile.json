@@ -132,13 +132,13 @@
     {
       "name": "AI Trader (Learning Project)",
       "status": "Repo created (content in progress)",
-      "summary": "A learning-focused trading-system repository. Some code was generated with LLM assistance (vibe coding), but the project taught me the importance of workflow, architecture, and verification when building complex systems. Not financial advice.",
+      "summary": "A learning-focused trading-system repository. Code was generated with LLM assistance, but the project taught me the importance of workflow, architecture, and verification when building complex systems.",
       "tech": [
         "Python"
       ],
       "highlights": [
         "LLM-assisted scaffolding; I focus on understanding and iterating on the workflow.",
-        "Workflow documented: data intake → signals → risk management → execution abstraction → logging.",
+        "Workflow documented: Data Intake → LLM Review via API (GPT & GEMINI) → Risk Management → Execution → Logging.",
         "Risk controls and limitations will be documented."
       ],
       "repo": "https://github.com/lutfanarch/JARVIS",
