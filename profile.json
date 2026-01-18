@@ -105,8 +105,9 @@
       "status": "In progress",
       "what_i_learned": [
         "Basic Python syntax and problem-solving",
-        "Getting comfortable with VS Code",
-        "Using LLMs as a study aid while verifying outputs carefully (the portfolio bot itself does not use an LLM)"
+        "Getting comfortable with VS Code and GitHub",
+        "Using LLMs as a study aid while verifying outputs carefully (the portfolio bot itself does not use an LLM)",
+        "Building projects using LLM models like GPT, GEMINI and CLAUDE via API"
       ],
       "evidence_links": [
         "https://github.com/lutfanarch/Portfolio-Chatbot"
