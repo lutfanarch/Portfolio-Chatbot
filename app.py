@@ -4,7 +4,7 @@ from pathlib import Path
 import streamlit as st
 
 APP_TITLE = "Interactive Portfolio Bot"
-APP_BUILD = "2026-01-18-privacy-no-certs-no-phone"
+APP_BUILD = "2026-01-18-no-repos-links-tab"
 PROFILE_PATH = Path("profile.json")
 
 
@@ -53,7 +53,7 @@ def format_growth_areas(items: list) -> str:
 
 
 def format_learning(learning_items: list) -> str:
-    """Render learning without an Evidence block (repo links are shown in Repos & Links)."""
+    """Render learning without an Evidence block (repo links are shown in the Projects section)."""
     if not learning_items:
         return "I haven't added learning items yet."
 
@@ -112,40 +112,6 @@ def format_projects(projects: list) -> str:
 
     return "\n".join(out).strip()
 
-
-def format_repos_and_links(profile: dict) -> str:
-    e = profile.get("evidence_and_links", {})
-    links = profile.get("links", {}) if isinstance(profile.get("links", {}), dict) else {}
-
-    github = e.get("github") or links.get("github")
-    streamlit_demo = e.get("streamlit_demo") or links.get("streamlit_demo")
-    project_repos = e.get("project_repos", [])
-
-    parts = []
-    if github:
-        parts.append(f"GitHub: {github}")
-    if streamlit_demo:
-        parts.append(f"Streamlit demo: {streamlit_demo}")
-
-    if isinstance(project_repos, list) and project_repos:
-        parts.append("Projects:")
-        lines = []
-        for item in project_repos:
-            if not isinstance(item, dict):
-                continue
-            project = item.get("project", "Project")
-            repo = item.get("repo", "")
-            demo = item.get("demo", "")
-            if repo:
-                lines.append(f"- {project}\n  - Repo: {repo}")
-            else:
-                lines.append(f"- {project}")
-            if demo:
-                lines.append(f"  - Demo: {demo}")
-        if lines:
-            parts.append("\n".join(lines).strip())
-
-    return "\n\n".join(parts).strip() if parts else "No links added yet."
 
 
 def answer_from_topic(profile: dict, topic_key: str) -> str:
@@ -259,9 +225,6 @@ def answer_from_topic(profile: dict, topic_key: str) -> str:
             parts.append("**Professional skills**\n\n" + safe_join_lines(prof))
         return "\n\n".join([p for p in parts if p]).strip() or "I haven't added skills yet."
 
-    if topic_key == "repos_links":
-        return format_repos_and_links(profile)
-
     if topic_key == "contact":
         contact = profile.get("contact", {})
         email = contact.get("email") or profile.get("meta", {}).get("contact_email")
@@ -292,7 +255,6 @@ def detect_topic(user_text: str) -> str | None:
         "learning": ["learning", "course", "codecademy", "practice"],
         "projects": ["project", "projects", "build", "built", "portfolio bot", "chatbot", "jarvis", "trader"],
         "skills": ["skill", "skills", "strengths", "tools"],
-        "repos_links": ["repo", "repos", "repository", "repositories", "github", "links", "demo", "streamlit"],
         "contact": ["contact", "email", "reach", "message"],
     }
 
@@ -329,7 +291,7 @@ st.sidebar.caption(f"Build: {APP_BUILD}")
 
 page = st.sidebar.radio(
     "Pages",
-    ["Chat", "Admissions View", "Repos & Links"],
+    ["Chat", "Admissions View"],
     index=0,
 )
 
@@ -341,7 +303,6 @@ quick_topics = [
     ("Learning", "learning"),
     ("Projects", "projects"),
     ("Skills", "skills"),
-    ("Repos & Links", "repos_links"),
     ("Contact", "contact"),
 ]
 
@@ -355,7 +316,7 @@ if "messages" not in st.session_state:
                 "Topics you can ask:\n"
                 "- About\n- Academics\n- National Service\n"
                 "- Why ICT/AI\n- Learning\n- Projects\n- Skills\n"
-                "- Repos & Links\n- Contact\n\n"
+                "- Contact\n\n"
                 "Tip: Use the 'Ask more' buttons at the bottom after each reply."
             ),
         }
@@ -393,7 +354,7 @@ if page == "Chat":
             if st.button(label, use_container_width=True, key=f"askmore_{key}"):
                 push_topic(label, key)
 
-    user_input = st.chat_input("Ask about a topic (e.g., Projects, Repos & Links)...")
+    user_input = st.chat_input("Ask about a topic (e.g., Projects, Academics)...")
     if user_input:
         st.session_state.messages.append({"role": "user", "content": user_input})
 
@@ -401,7 +362,7 @@ if page == "Chat":
         if topic is None:
             response = (
                 "I can only answer using the data in profile.json.\n\n"
-                "Try: About, Academics, National Service, Why ICT/AI, Learning, Projects, Skills, Repos & Links, Contact."
+                "Try: About, Academics, National Service, Why ICT/AI, Learning, Projects, Skills, Contact."
             )
         else:
             response = answer_from_topic(profile, topic)
@@ -433,12 +394,8 @@ elif page == "Admissions View":
     st.markdown("### Skills")
     st.markdown(answer_from_topic(profile, "skills"))
 
-    st.markdown("### Repos & Links")
-    st.markdown(answer_from_topic(profile, "repos_links"))
-
     st.markdown("### Contact")
     st.markdown(answer_from_topic(profile, "contact"))
 
 else:
-    st.subheader("Repos & Links")
-    st.markdown(answer_from_topic(profile, "repos_links"))
+    st.info('No additional pages are enabled.')

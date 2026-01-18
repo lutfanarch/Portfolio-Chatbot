@@ -124,8 +124,7 @@
       ],
       "highlights": [
         "Quick buttons for common admissions topics",
-        "Admissions View for structured reading",
-        "Repos & Links section to show the GitHub repo and Streamlit demo"
+        "Admissions View for structured reading"
       ],
       "repo": "https://github.com/lutfanarch/Portfolio-Chatbot",
       "demo": "https://portfolio-chatbot-nasugzunnuqx48yz2myspz.streamlit.app/"
@@ -133,14 +132,14 @@
     {
       "name": "AI Trader (Learning Project)",
       "status": "Repo created (content in progress)",
-      "summary": "A learning-focused trading project. Proof is the repository and the documentation explaining how it functions. Not financial advice.",
+      "summary": "A learning-focused trading-system repository. Some code was generated with LLM assistance (vibe coding), but the project taught me the importance of workflow, architecture, and verification when building complex systems. Not financial advice.",
       "tech": [
         "Python"
       ],
       "highlights": [
-        "README will explain how the system works",
-        "Architecture and flow will be documented",
-        "Risk controls and limitations will be documented"
+        "LLM-assisted scaffolding; I focus on understanding and iterating on the workflow.",
+        "Workflow documented: data intake → signals → risk management → execution abstraction → logging.",
+        "Risk controls and limitations will be documented."
       ],
       "repo": "https://github.com/lutfanarch/JARVIS",
       "demo": "",
@@ -165,30 +164,6 @@
       "Resilience under pressure",
       "Evidence-based communication"
     ]
-  },
-  "evidence_and_links": {
-    "github": "https://github.com/lutfanarch",
-    "streamlit_demo": "https://portfolio-chatbot-nasugzunnuqx48yz2myspz.streamlit.app/",
-    "project_repos": [
-      {
-        "project": "Interactive Portfolio Chatbot (Streamlit)",
-        "repo": "https://github.com/lutfanarch/Portfolio-Chatbot",
-        "demo": "https://portfolio-chatbot-nasugzunnuqx48yz2myspz.streamlit.app/"
-      },
-      {
-        "project": "AI Trader (Learning Project)",
-        "repo": "https://github.com/lutfanarch/JARVIS",
-        "demo": ""
-      }
-    ],
-    "notes": [
-      "Primary focus: deterministic answers + working repo links.",
-      "AI Trader repo currently has no files yet; it will be updated before submission."
-    ]
-  },
-  "links": {
-    "github": "https://github.com/lutfanarch",
-    "streamlit_demo": "https://portfolio-chatbot-nasugzunnuqx48yz2myspz.streamlit.app/"
   },
   "privacy": {
     "boundaries": [
