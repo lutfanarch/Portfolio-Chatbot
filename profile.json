@@ -139,7 +139,8 @@
       "highlights": [
         "LLM-assisted scaffolding; I focus on understanding and iterating on the workflow.",
         "Workflow documented: Data Intake → LLM Review via API (GPT & GEMINI) → Risk Management → Execution → Logging.",
-        "Risk controls and limitations will be documented."
+        "Risk controls and limitations will be documented.",
+        "First time commiting repo to GitHub in hopes to express and share my interest in AI and Trading"
       ],
       "repo": "https://github.com/lutfanarch/JARVIS",
       "demo": "",
