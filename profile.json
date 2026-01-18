@@ -145,7 +145,7 @@
       "demo": "",
       "how_it_works_outline": [
         "Data intake: load or fetch price data",
-        "Signal generation: deterministic rules produce buy/sell/hold",
+        "Signal generation: Via LLM, GPT & GEMINI",
         "Risk management: position sizing + exposure constraints + stop conditions",
         "Execution layer: paper-trading or broker abstraction (if implemented)",
         "Logging/reporting: record decisions and results for review"
@@ -156,7 +156,7 @@
     "technical": [
       "Python (beginner)",
       "GitHub (beginner)",
-      "VS Code"
+      "VS Code (beginner)"
     ],
     "professional": [
       "Teamwork",
