@@ -11,7 +11,7 @@
   "about": {
     "short_bio": [
       "I am Lutfan Haziq, turning 21 this year. I completed National Service on 25 October 2025.",
-      "After ORD, I used my available time to self-study Python and explore AI concepts (chatbots and machine learning) through beginner lessons and guidance from peers.",
+      "After ORD, I used my available time to self-study Python and explore AI concepts (LLMs,machine learning, agentic AI, Generative AI) through beginner lessons and guidance from peers.",
       "My interest grew through my exposure to trading/finance, where AI and machine learning are increasingly used. As a trader, I want to understand what AI can and cannot do, and why those strengths and limitations exist."
     ],
     "values": [
@@ -46,7 +46,7 @@
   },
   "academics": {
     "context": [
-      "O-Level holder. Private candidate for E-Math in 2025; results released in January 2026.",
+      "Took O Levels in 2021 and -=02022 under Kuo Chuan, Private candidate for E-Math in 2025.",
       "Key concern: E-Math D7. I am addressing this with an improvement plan and consistent practice."
     ],
     "elr2b2_snapshot": {
@@ -71,6 +71,7 @@
         "Rebuilding fundamentals systematically (topic-by-topic).",
         "Using practice logs and timed practice to improve accuracy and speed.",
         "If required, I am prepared to retake E-Math again in 2026 to take part in JAE 2027."
+        
       ]
     }
   },
